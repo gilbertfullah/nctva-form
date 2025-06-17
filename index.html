@@ -1,0 +1,3209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCTVA Accreditation Form - Self-study Report</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --nctva-green: #22c55e;
+        --nctva-blue: #3b82f6;
+        --nctva-dark-green: #16a34a;
+        --nctva-dark-blue: #2563eb;
+      }
+
+      body {
+        font-family: "Times New Roman", serif;
+        line-height: 1.4;
+      }
+
+      .nctva-header {
+        background: linear-gradient(
+          135deg,
+          var(--nctva-green) 0%,
+          var(--nctva-blue) 100%
+        );
+      }
+
+      .nctva-logo {
+        width: 120px;
+        height: 120px;
+      }
+
+      .form-section {
+        margin-bottom: 2rem;
+        page-break-inside: avoid;
+      }
+
+      .form-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+
+      .form-table th,
+      .form-table td {
+        border: 1px solid #374151;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .form-table th {
+        background-color: #f3f4f6;
+        font-weight: bold;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: var(--nctva-blue);
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+      }
+
+      .section-title {
+        background: linear-gradient(
+          90deg,
+          var(--nctva-green),
+          var(--nctva-blue)
+        );
+        color: white;
+        padding: 12px;
+        margin: 20px 0 15px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .submit-btn {
+        background: linear-gradient(
+          135deg,
+          var(--nctva-green),
+          var(--nctva-blue)
+        );
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .setup-instructions {
+        background: #f0f9ff;
+        border: 2px solid var(--nctva-blue);
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      .alert {
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border-left: 4px solid;
+      }
+
+      .alert-success {
+        background: #ecfdf5;
+        border-color: var(--nctva-green);
+        color: #065f46;
+      }
+
+      .alert-error {
+        background: #fef2f2;
+        border-color: #ef4444;
+        color: #991b1b;
+      }
+
+       {
+        body {
+          font-size: 12px;
+          line-height: 1.2;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .form-section {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header with Logo -->
+    <div class="nctva-header text-white p-6 text-center">
+      <div class="flex items-center justify-center mb-4">
+        <img
+          class="nctva-logo mr-4"
+          src="/path/to/logo.jpg"
+          alt="NCTVA Logo"
+          width="120"
+          height="120"
+        />
+        <div>
+          <h1 class="text-2xl font-bold mb-2">
+            NATIONAL COUNCIL FOR TECHNICAL AND OTHER ACADEMIC AWARDS
+          </h1>
+          <p class="text-sm">
+            P.O. BOX 135, A.J. MOMOH STREET, TOWER HILL, FREETOWN, SIERRA LEONE
+          </p>
+          <p class="text-sm">Tel: 033-948862/078-566376/076-699166</p>
+          <p class="text-sm">
+            E-mail:
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="670603060a0649050609090e1413021527090413110649081500"
+              >[email&#160;protected]</a
+            >
+            /
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="ee9d82c0808d9a988fdedcae978f868181c08d8183"
+              >[email&#160;protected]</a
+            >
+          </p>
+          <p class="text-sm">Website: www.nctva.org</p>
+          <p class="text-sm">
+            Bankers: SLCB 003001109959100196/UTB 004001122767120122
+          </p>
+        </div>
+      </div>
+      <h2 class="text-xl font-semibold">
+        Self-study Report (Questionnaire) Accreditation of Programmes
+      </h2>
+    </div>
+
+    <!-- Setup Instructions (No Print) -->
+    <div class="setup-instructions no-print max-w-6xl mx-auto mt-6">
+      <h3 class="text-lg font-bold text-blue-800 mb-3">
+        <i class="fas fa-cog mr-2"></i>Google Sheets Setup Instructions
+      </h3>
+      <div class="text-sm space-y-2">
+        <p>
+          <strong>Step 1:</strong> Create a new Google Sheet at
+          <a
+            href="https://sheets.google.com"
+            target="_blank"
+            class="text-blue-600 underline"
+            >sheets.google.com</a
+          >
+        </p>
+        <p><strong>Step 2:</strong> Go to Extensions → Apps Script</p>
+        <p>
+          <strong>Step 3:</strong> Replace the default code with the script
+          provided below
+        </p>
+        <p><strong>Step 4:</strong> Deploy as Web App and copy the URL</p>
+        <p>
+          <strong>Step 5:</strong> Update the SCRIPT_URL variable in this HTML
+          file
+        </p>
+        <details class="mt-3">
+          <summary class="cursor-pointer text-blue-600 font-medium">
+            Click to view Google Apps Script code
+          </summary>
+          <pre
+            class="bg-gray-800 text-green-400 p-4 rounded mt-2 text-xs overflow-x-auto"
+          >
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    
+    // Create headers if they don't exist
+    if (sheet.getLastRow() === 0) {
+      var headers = Object.keys(data);
+      sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+    }
+    
+    // Get current headers
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    
+    // Prepare row data
+    var rowData = headers.map(function(header) {
+      return data[header] || "";
+    });
+    
+    // Add timestamp
+    rowData.unshift(new Date());
+    
+    // Insert timestamp header if not exists
+    if (headers[0] !== "Timestamp") {
+      sheet.insertColumnBefore(1);
+      sheet.getRange(1, 1).setValue("Timestamp");
+    }
+    
+    // Add the row
+    sheet.appendRow(rowData);
+    
+    return ContentService.createTextOutput(JSON.stringify({
+      'result': 'success',
+      'message': 'Form submitted successfully'
+    })).setMimeType(ContentService.MimeType.JSON);
+    
+  } catch (error) {
+    return ContentService.createTextOutput(JSON.stringify({
+      'result': 'error',
+      'message': error.toString()
+    })).setMimeType(ContentService.MimeType.JSON);
+  }
+}</pre
+          >
+        </details>
+      </div>
+    </div>
+
+    <!-- Main Form -->
+    <div class="max-w-6xl mx-auto bg-white shadow-lg">
+      <form id="accreditationForm" class="p-6">
+        <!-- Section A: General Information -->
+        <div class="section-title">A. GENERAL INFORMATION</div>
+        <div class="form-section">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Name of Institution *</label
+              >
+              <input
+                type="text"
+                name="institution_name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Postal Address</label
+              >
+              <input type="text" name="postal_address" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Physical Address of Administrative Site</label
+              >
+              <input type="text" name="physical_address" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Location (Town or Village)</label
+              >
+              <input type="text" name="location" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Chiefdom</label>
+              <input type="text" name="chiefdom" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">District</label>
+              <input type="text" name="district" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Telephone</label>
+              <input type="tel" name="telephone" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Fax</label>
+              <input type="text" name="fax" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">E-mail</label>
+              <input type="email" name="email" class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Date of Establishment</label
+              >
+              <input type="date" name="date_established" class="form-input" />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-medium mb-1"
+              >Physical Address of Satellite Centres</label
+            >
+            <textarea
+              name="satellite_centres"
+              class="form-input"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-medium mb-1"
+              >Are you registered with the TEC? (If yes, attach copy of
+              letter/certificate)</label
+            >
+            <textarea
+              name="tec_registration"
+              class="form-input"
+              rows="2"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Section B: Governance Structure -->
+        <div class="section-title">B. GOVERNANCE STRUCTURE</div>
+        <div class="form-section">
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Name of Board Member</th>
+                <th>Profession</th>
+                <th>Present Occupation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_chair_name"
+                    class="form-input"
+                    placeholder="(Chair)"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_chair_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_chair_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_2_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_2_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_3_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_3_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_3_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_4_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_4_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_4_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_5_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_5_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_member_5_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="board_secretary_name"
+                    class="form-input"
+                    placeholder="(Secretary)"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_secretary_profession"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="board_secretary_occupation"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-4">
+            <label class="block text-sm font-medium mb-1"
+              >Date and Venue of Last Board Meeting</label
+            >
+            <input type="text" name="last_board_meeting" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Section C: Management Structure -->
+        <div class="section-title">C. MANAGEMENT STRUCTURE</div>
+        <div class="form-section">
+          <p class="text-sm mb-3">
+            Complete table below and attach copy of organizational chart of the
+            institution
+          </p>
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Qualification(s)</th>
+                <th>Date of Appointment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Head</td>
+                <td>
+                  <input type="text" name="head_name" class="form-input" />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="head_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="head_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Deputy Head</td>
+                <td>
+                  <input
+                    type="text"
+                    name="deputy_head_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="deputy_head_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="deputy_head_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Registrar</td>
+                <td>
+                  <input type="text" name="registrar_name" class="form-input" />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="registrar_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="registrar_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Finance Officer</td>
+                <td>
+                  <input
+                    type="text"
+                    name="finance_officer_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="finance_officer_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="finance_officer_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Examination Officer</td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_officer_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_officer_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="exam_officer_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section D: Entry Requirements/Duration -->
+        <div class="section-title">D. ENTRY REQUIREMENT(S)/DURATION</div>
+        <div class="form-section">
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Program</th>
+                <th>Entry Requirement(s)</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Access</td>
+                <td>
+                  <input
+                    type="text"
+                    name="access_entry_req"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="access_duration"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Certificate</td>
+                <td>
+                  <input
+                    type="text"
+                    name="certificate_entry_req"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="certificate_duration"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Diploma</td>
+                <td>
+                  <input
+                    type="text"
+                    name="diploma_entry_req"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="diploma_duration"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>HND</td>
+                <td>
+                  <input type="text" name="hnd_entry_req" class="form-input" />
+                </td>
+                <td>
+                  <input type="text" name="hnd_duration" class="form-input" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section E: Academic/Examination Board -->
+        <div class="section-title">E. ACADEMIC/EXAMINATION BOARD</div>
+        <div class="form-section">
+          <h4 class="font-semibold mb-3">Composition of the Academic Board</h4>
+          <table class="form-table mb-6">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_1_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_1_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_2_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_2_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_3_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_3_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_3_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_4_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_4_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_4_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_5_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_5_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="academic_board_5_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="text-sm mb-4">
+            Please attach document on terms of Reference of Academic Board
+          </p>
+
+          <h4 class="font-semibold mb-3">
+            Composition of Examination Board (Internal)
+          </h4>
+          <table class="form-table mb-6">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_1_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_1_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_2_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_2_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_3_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_3_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_3_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_4_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_4_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_4_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_5_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_5_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_internal_5_department"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">
+            Composition of Examination Board (External)
+          </h4>
+          <table class="form-table mb-6">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Specialization/Institution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_1_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_1_specialization"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_2_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_2_specialization"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_3_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_3_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_3_specialization"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_4_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_4_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_4_specialization"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_5_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_5_designation"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="exam_board_external_5_specialization"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">Final Examination</h4>
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Name of Program</th>
+                <th>Level</th>
+                <th>Examination Body (Name and Address)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_1_program"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_1_level"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_1_body"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_2_program"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_2_level"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_2_body"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_3_program"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_3_level"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_3_body"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_4_program"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_4_level"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_4_body"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_5_program"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_5_level"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="final_exam_5_body"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section F: List of Programs and Enrollment -->
+        <div class="section-title">F. LIST OF PROGRAMS AND ENROLLMENT</div>
+        <div class="form-section">
+          <div class="overflow-x-auto">
+            <table class="form-table text-xs">
+              <thead>
+                <tr>
+                  <th rowspan="2">No</th>
+                  <th rowspan="2">Name of Program</th>
+                  <th colspan="3">Certificate</th>
+                  <th colspan="3">Diploma</th>
+                  <th colspan="3">HND</th>
+                </tr>
+                <tr>
+                  <th>Male</th>
+                  <th>Female</th>
+                  <th>Total</th>
+                  <th>Male</th>
+                  <th>Female</th>
+                  <th>Total</th>
+                  <th>Male</th>
+                  <th>Female</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="program_1_name"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_cert_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_cert_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_cert_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_dip_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_dip_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_dip_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_hnd_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_hnd_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_1_hnd_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="program_2_name"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_cert_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_cert_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_cert_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_dip_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_dip_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_dip_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_hnd_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_hnd_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_2_hnd_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="program_3_name"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_cert_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_cert_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_cert_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_dip_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_dip_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_dip_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_hnd_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_hnd_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_3_hnd_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="program_4_name"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_cert_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_cert_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_cert_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_dip_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_dip_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_dip_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_hnd_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_hnd_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_4_hnd_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="program_5_name"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_cert_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_cert_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_cert_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_dip_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_dip_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_dip_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_hnd_male"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_hnd_female"
+                      class="form-input text-xs"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name="program_5_hnd_total"
+                      class="form-input text-xs"
+                      readonly
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm mt-2">Use Supplementary Sheets if Necessary</p>
+        </div>
+
+        <!-- Section G: Program(s) for which Accreditation and Examination are being applied for -->
+        <div class="section-title">
+          G. PROGRAM(S) FOR WHICH ACCREDITATION AND EXAMINATION ARE BEING
+          APPLIED FOR
+        </div>
+        <div class="form-section">
+          <table class="form-table mb-4">
+            <tr>
+              <td class="font-medium">Title</td>
+              <td>
+                <input
+                  type="text"
+                  name="accreditation_program_title"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="font-medium">Department</td>
+              <td>
+                <input
+                  type="text"
+                  name="accreditation_program_department"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="font-medium">Date Dept. was established</td>
+              <td>
+                <input
+                  type="date"
+                  name="department_establishment_date"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="font-medium">
+                Organization chart (Please Attach Copy)
+              </td>
+              <td>
+                <input
+                  type="file"
+                  name="organization_chart"
+                  class="form-input"
+                  accept=".pdf,.doc,.docx,.jpg,.png"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <h4 class="font-semibold mb-3">2. Staffing:</h4>
+
+          <h5 class="font-medium mb-2">
+            List full-time exclusively for the program(s)
+          </h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Name of Staff</th>
+                <th>Qualification(s)</th>
+                <th>Institution Attended</th>
+                <th>Date of Graduation</th>
+                <th>Date of Appointment</th>
+                <th>Subject(s) Taught</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_1_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_1_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_1_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_1_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_1_subjects"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_2_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_2_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_2_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_2_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_2_subjects"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_3_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_3_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_3_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_3_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="fulltime_staff_3_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fulltime_staff_3_subjects"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5 class="font-medium mb-2">
+            List staff of other program(s) that service support subject(s) for
+            (a) above
+          </h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Name of Staff</th>
+                <th>Qualification(s)</th>
+                <th>Institution Attended</th>
+                <th>Date of Graduation</th>
+                <th>Date of Appointment</th>
+                <th>Subject(s) Taught</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_1_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_1_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="support_staff_1_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="support_staff_1_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_1_subjects"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_2_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_2_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="support_staff_2_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="support_staff_2_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="support_staff_2_subjects"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5 class="font-medium mb-2">
+            Part-time staff from other institutions
+          </h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Name of Staff</th>
+                <th>Institution of Regular Appointment</th>
+                <th>Qualification(s)</th>
+                <th>Subject(s) Taught</th>
+                <th>Date of Graduation</th>
+                <th>Date of Appointment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_1_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_1_regular_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_1_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_1_subjects"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="parttime_staff_1_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="parttime_staff_1_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_2_name"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_2_regular_institution"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_2_qualification"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="parttime_staff_2_subjects"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="parttime_staff_2_graduation_date"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="parttime_staff_2_appointment_date"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">3. Objectives of program(s)</h4>
+          <textarea
+            name="program_objectives"
+            class="form-input"
+            rows="4"
+            placeholder="Describe the objectives of the program(s)"
+          ></textarea>
+
+          <h4 class="font-semibold mb-3 mt-6">Infrastructure/Tools</h4>
+          <h5 class="font-medium mb-2">
+            List all Tools/Equipment available for the program
+          </h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_1_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="equipment_1_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_1_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_2_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="equipment_2_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_2_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_3_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="equipment_3_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_3_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_4_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="equipment_4_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_4_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_5_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="equipment_5_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="equipment_5_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5 class="font-medium mb-2">
+            List other facilities (not belonging to the program) which could be
+            made available to the program
+          </h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_1_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="other_facility_1_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_1_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_2_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="other_facility_2_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_2_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_3_description"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="other_facility_3_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="other_facility_3_state"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5 class="font-medium mb-2">Accommodation for the Program(s)</h5>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Description</th>
+                <th>Capacity (Floor Area)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Office for Head of Department</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_hod_office"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Staff Room (Teaching)</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_staff_room"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Administrative/support staff</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_admin_staff"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Classrooms</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_classrooms"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Workshop/Laboratories</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_workshops"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Others</td>
+                <td>
+                  <input
+                    type="text"
+                    name="accommodation_others"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">5. Funding of the program(s)</h4>
+          <label class="block text-sm font-medium mb-1"
+            >State the amount of funds available to the program(s) per
+            year</label
+          >
+          <input
+            type="text"
+            name="program_funding"
+            class="form-input"
+            placeholder="Amount in Leone or USD"
+          />
+        </div>
+
+        <!-- Section H: Library (General) -->
+        <div class="section-title">H. LIBRARY (GENERAL)</div>
+        <div class="form-section">
+          <h4 class="font-semibold mb-3">1. Capacity</h4>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Capacity/Floor Area</th>
+                <th>Capacity/Sitting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_floor_area"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="library_sitting_capacity"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <label class="block text-sm font-medium mb-1"
+            >List conveniences/facilities such as Air-conditioners, Fans/Copiers
+            available</label
+          >
+          <textarea
+            name="library_facilities"
+            class="form-input"
+            rows="3"
+          ></textarea>
+
+          <h4 class="font-semibold mb-3 mt-6">
+            2. Stock of Books/Journal(s) – General
+          </h4>
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>No. of Books</th>
+                <th>No. of Journals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_subject_1"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_books_1"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_journals_1"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_subject_2"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_books_2"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_journals_2"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_subject_3"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_books_3"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_journals_3"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_subject_4"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_books_4"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_journals_4"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="library_subject_5"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_books_5"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="library_journals_5"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">
+            Physical/Electronics Library (Departmental)
+          </h4>
+          <p class="text-sm mb-3">
+            Books acquired for the department in the last two years
+          </p>
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Book Title</th>
+                <th>Quantity</th>
+                <th>Edition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_1_title"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="recent_book_1_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_1_edition"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_2_title"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="recent_book_2_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_2_edition"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_3_title"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="recent_book_3_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_3_edition"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_4_title"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="recent_book_4_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_4_edition"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_5_title"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="recent_book_5_quantity"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="recent_book_5_edition"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section I: Computer Facilities -->
+        <div class="section-title">I. COMPUTER FACILITIES</div>
+        <div class="form-section">
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Specifications</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="computer_spec_1"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="computer_quantity_1"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="computer_spec_2"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="computer_quantity_2"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="computer_spec_3"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="computer_quantity_3"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="computer_spec_4"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="computer_quantity_4"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="computer_spec_5"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="computer_quantity_5"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <label class="block text-sm font-medium mb-1"
+            >Please describe the Internet Facilities of your institution</label
+          >
+          <textarea
+            name="internet_facilities"
+            class="form-input"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <!-- Section J: Description/Specification of Occupational Health and Safety Equipment -->
+        <div class="section-title">
+          J. DESCRIPTION/SPECIFICATION OF OCCUPATIONAL HEALTH AND SAFETY
+          EQUIPMENT
+        </div>
+        <div class="form-section">
+          <table class="form-table mb-4">
+            <thead>
+              <tr>
+                <th>Specifications</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="safety_equipment_1"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="safety_quantity_1"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="safety_equipment_2"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="safety_quantity_2"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="safety_equipment_3"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="safety_quantity_3"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="safety_equipment_4"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="safety_quantity_4"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="safety_equipment_5"
+                    class="form-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="safety_quantity_5"
+                    class="form-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="font-semibold mb-3">
+            Recreation facilities. Please list. Use supplementary if necessary
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1">1.</label>
+              <input
+                type="text"
+                name="recreation_facility_1"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">2.</label>
+              <input
+                type="text"
+                name="recreation_facility_2"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">3.</label>
+              <input
+                type="text"
+                name="recreation_facility_3"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">4.</label>
+              <input
+                type="text"
+                name="recreation_facility_4"
+                class="form-input"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section K: Sanitation -->
+        <div class="section-title">K. SANITATION</div>
+        <div class="form-section">
+          <div class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Are the sanitation facilities for staff adequate?</label
+              >
+              <select name="staff_sanitation_adequate" class="form-input">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Are the sanitation facilities for students adequate?</label
+              >
+              <select name="student_sanitation_adequate" class="form-input">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section L: Other relevant information -->
+        <div class="section-title">L. OTHER RELEVANT INFORMATION</div>
+        <div class="form-section">
+          <textarea
+            name="other_relevant_information"
+            class="form-input"
+            rows="6"
+            placeholder="Please state any other relevant information"
+          ></textarea>
+        </div>
+
+        <!-- Form Completion Section -->
+        <div class="section-title">FORM COMPLETION</div>
+        <div class="form-section">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Questionnaire completed by - Name:</label
+              >
+              <input
+                type="text"
+                name="completed_by_name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Designation:</label>
+              <input
+                type="text"
+                name="completed_by_designation"
+                class="form-input"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Telephone:</label>
+              <input
+                type="tel"
+                name="completed_by_telephone"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Email:</label>
+              <input
+                type="email"
+                name="completed_by_email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Date:</label>
+              <input
+                type="date"
+                name="completion_date"
+                class="form-input"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <label class="block text-sm font-medium mb-1"
+              >Counter-Signed by Principal/Director/Coordinator:</label
+            >
+            <input type="text" name="countersigned_by" class="form-input" />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div>
+              <label class="block text-sm font-medium mb-1">Date:</label>
+              <input type="date" name="countersign_date" class="form-input" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center py-8">
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane mr-2"></i>Submit Accreditation Form
+          </button>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="submitStatus" class="mt-4"></div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center py-4 bg-gray-100 text-sm text-gray-600">
+      <p>NCTVA/Acc form 7/07/22 - Page 1 of 1</p>
+      <p>National Council for Technical and Other Academic Awards</p>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script>
+      // Google Sheets Integration
+      const SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE"; // Replace with your Google Apps Script URL
+
+      // Auto-calculate totals in enrollment table
+      function setupTotalCalculation() {
+        const programRows = document.querySelectorAll("tbody tr");
+        programRows.forEach((row, index) => {
+          if (index === 0) return; // Skip header row
+
+          const maleInputs = row.querySelectorAll(
+            'input[type="number"]:nth-child(odd)'
+          );
+          const femaleInputs = row.querySelectorAll(
+            'input[type="number"]:nth-child(even)'
+          );
+          const totalInputs = row.querySelectorAll("input[readonly]");
+
+          function calculateTotals() {
+            for (let i = 0; i < totalInputs.length; i++) {
+              const maleValue = parseInt(maleInputs[i].value) || 0;
+              const femaleValue = parseInt(femaleInputs[i].value) || 0;
+              totalInputs[i].value = maleValue + femaleValue;
+            }
+          }
+
+          maleInputs.forEach((input) =>
+            input.addEventListener("input", calculateTotals)
+          );
+          femaleInputs.forEach((input) =>
+            input.addEventListener("input", calculateTotals)
+          );
+        });
+      }
+
+      // Form submission handler
+      document
+        .getElementById("accreditationForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const statusDiv = document.getElementById("submitStatus");
+          statusDiv.innerHTML =
+            '<div class="alert alert-info"><i class="fas fa-spinner fa-spin mr-2"></i>Submitting form...</div>';
+
+          try {
+            // Check if Google Script URL is configured
+            if (SCRIPT_URL === "YOUR_GOOGLE_SCRIPT_URL_HERE") {
+              throw new Error(
+                "Google Sheets integration not configured. Please update the SCRIPT_URL variable."
+              );
+            }
+
+            const formData = new FormData(this);
+            const data = {};
+
+            // Convert FormData to regular object
+            for (let [key, value] of formData.entries()) {
+              data[key] = value;
+            }
+
+            const response = await fetch(SCRIPT_URL, {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            });
+
+            const result = await response.json();
+
+            if (result.result === "success") {
+              statusDiv.innerHTML =
+                '<div class="alert alert-success"><i class="fas fa-check-circle mr-2"></i>Form submitted successfully! Your application has been recorded.</div>';
+              this.reset();
+            } else {
+              throw new Error(result.message || "Submission failed");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            statusDiv.innerHTML = `<div class="alert alert-error"><i class="fas fa-exclamation-triangle mr-2"></i>Error: ${error.message}</div>`;
+          }
+        });
+
+      // Initialize form
+      document.addEventListener("DOMContentLoaded", function () {
+        setupTotalCalculation();
+
+        // Set current date as default for completion date
+        const today = new Date().toISOString().split("T")[0];
+        document.querySelector('input[name="completion_date"]').value = today;
+      });
+
+      // Print functionality
+      function printForm() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>
+<script id="html_badge_script1">
+  window.__genspark_remove_badge_link =
+    "https://www.genspark.ai/api/html_badge/" +
+    "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDp14Ww8h%2FzYhtDCr2htUcr2FP16yo%2Fa2UYT3pnmK2jZ%2Fu%2Byo4Nmz6C6DFUdioQXDyjHPipxwRQbH4iIVhjYb0T8H5ON2xOaaXK%2Fpwc1ElhJ1XJ8rHKwkA8V8NfPaKM86WxAaKm4g0ykHqlC1Uiav0OZLVDQd1p5K3ptzU6qGKhBmzl2Wr%2FtObCw3Bav88VLdzTR9krvShSlyfmgAkqvjQK429wQs7iSUtFnqxDGp2BIZUDkQobQ394%2FjJ7P2WjG0BVc30tgJjwHdVSlSkWrUfM5zbxcJeZoyDd6uhVSF9eD22%2BtlUFoEphaNrv4dIu1SM47gYSgWC%2FKiac73IBLWt5DJtJWureDHIjeRB8l9XHjcfH%2F%2BRhKicoYabAFXD5lHLvYBrPtJAYYhASy%2BmjeE9WVOLyPbybHim2L376AmStD%2FE%2FP0DKkT5NChYyTDcHHzsZLf9IgOownT3VoHNA7RP3Hc6qDl9rDKbNy2OkeGeKDio6tbtI7ShdLnsIEQSsxKYwwz9at14JVStdM2kKt6O8g%3D";
+  window.__genspark_locale = "en-US";
+  window.__genspark_token =
+    "To/BnjzloZ3UfQdcSaYfDp14Ww8h/zYhtDCr2htUcr2FP16yo/a2UYT3pnmK2jZ/u+yo4Nmz6C6DFUdioQXDyjHPipxwRQbH4iIVhjYb0T8H5ON2xOaaXK/pwc1ElhJ1XJ8rHKwkA8V8NfPaKM86WxAaKm4g0ykHqlC1Uiav0OZLVDQd1p5K3ptzU6qGKhBmzl2Wr/tObCw3Bav88VLdzTR9krvShSlyfmgAkqvjQK429wQs7iSUtFnqxDGp2BIZUDkQobQ394/jJ7P2WjG0BVc30tgJjwHdVSlSkWrUfM5zbxcJeZoyDd6uhVSF9eD22+tlUFoEphaNrv4dIu1SM47gYSgWC/Kiac73IBLWt5DJtJWureDHIjeRB8l9XHjcfH/+RhKicoYabAFXD5lHLvYBrPtJAYYhASy+mjeE9WVOLyPbybHim2L376AmStD/E/P0DKkT5NChYyTDcHHzsZLf9IgOownT3VoHNA7RP3Hc6qDl9rDKbNy2OkeGeKDio6tbtI7ShdLnsIEQSsxKYwwz9at14JVStdM2kKt6O8g=";
+</script>
+
+<script
+  id="html_badge_script2"
+  src="https://www.genspark.ai/html_badge.js"
+></script>
+
+<script
+  id="html_notice_dialog_script"
+  src="https://www.genspark.ai/notice_dialog.js"
+></script>
