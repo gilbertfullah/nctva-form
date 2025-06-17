@@ -158,7 +158,7 @@
       <div class="flex items-center justify-center mb-4">
         <img
           class="nctva-logo mr-4"
-          src="/path/to/logo.jpg"
+          src="logo.jpg"
           alt="NCTVA Logo"
           width="120"
           height="120"
@@ -196,86 +196,6 @@
       <h2 class="text-xl font-semibold">
         Self-study Report (Questionnaire) Accreditation of Programmes
       </h2>
-    </div>
-
-    <!-- Setup Instructions (No Print) -->
-    <div class="setup-instructions no-print max-w-6xl mx-auto mt-6">
-      <h3 class="text-lg font-bold text-blue-800 mb-3">
-        <i class="fas fa-cog mr-2"></i>Google Sheets Setup Instructions
-      </h3>
-      <div class="text-sm space-y-2">
-        <p>
-          <strong>Step 1:</strong> Create a new Google Sheet at
-          <a
-            href="https://sheets.google.com"
-            target="_blank"
-            class="text-blue-600 underline"
-            >sheets.google.com</a
-          >
-        </p>
-        <p><strong>Step 2:</strong> Go to Extensions → Apps Script</p>
-        <p>
-          <strong>Step 3:</strong> Replace the default code with the script
-          provided below
-        </p>
-        <p><strong>Step 4:</strong> Deploy as Web App and copy the URL</p>
-        <p>
-          <strong>Step 5:</strong> Update the SCRIPT_URL variable in this HTML
-          file
-        </p>
-        <details class="mt-3">
-          <summary class="cursor-pointer text-blue-600 font-medium">
-            Click to view Google Apps Script code
-          </summary>
-          <pre
-            class="bg-gray-800 text-green-400 p-4 rounded mt-2 text-xs overflow-x-auto"
-          >
-function doPost(e) {
-  try {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var data = JSON.parse(e.postData.contents);
-    
-    // Create headers if they don't exist
-    if (sheet.getLastRow() === 0) {
-      var headers = Object.keys(data);
-      sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-    }
-    
-    // Get current headers
-    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    
-    // Prepare row data
-    var rowData = headers.map(function(header) {
-      return data[header] || "";
-    });
-    
-    // Add timestamp
-    rowData.unshift(new Date());
-    
-    // Insert timestamp header if not exists
-    if (headers[0] !== "Timestamp") {
-      sheet.insertColumnBefore(1);
-      sheet.getRange(1, 1).setValue("Timestamp");
-    }
-    
-    // Add the row
-    sheet.appendRow(rowData);
-    
-    return ContentService.createTextOutput(JSON.stringify({
-      'result': 'success',
-      'message': 'Form submitted successfully'
-    })).setMimeType(ContentService.MimeType.JSON);
-    
-  } catch (error) {
-    return ContentService.createTextOutput(JSON.stringify({
-      'result': 'error',
-      'message': error.toString()
-    })).setMimeType(ContentService.MimeType.JSON);
-  }
-}</pre
-          >
-        </details>
-      </div>
     </div>
 
     <!-- Main Form -->
